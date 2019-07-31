@@ -42,28 +42,28 @@ Params:
 
 #### User Routes 
 
-1.GetUserProfile
+1.GetUserProfile **AUTH**
  * Method : GET 
  * URL : /user
  Params : 
 
-2. Get Users (ONLY ADMIN)
+2. Get Users (ONLY ADMIN) **AUTH**
 - METHOD : GET 
 
 
 ### Form
 
-1.Add Form
+1.Add Form **AUTH**
 * Method : POST
 * URL : /form_details
 Params : 
     ###### ALL THE DATA 
 
-2.Get Forms(ONLY ADMIN)
+2.Get Forms(ONLY ADMIN) **AUTH**
 * Method: GET
 * URL : forms_details
 
-3.Get Single Form
+3.Get Single Form **AUTH**
 * Method : GET
 * URL : single_form
 
