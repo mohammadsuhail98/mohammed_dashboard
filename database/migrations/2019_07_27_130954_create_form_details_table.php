@@ -64,6 +64,7 @@ class CreateFormDetailsTable extends Migration
             $table->string('external_power_amperes')->default('string here');
             $table->string('comments')->default('string here');
             $table->string('general_notes')->default('string here');
+            $table->boolean('is_active')->default(true);
             $table->bigInteger('user_id');
             $table->timestamps();
         });

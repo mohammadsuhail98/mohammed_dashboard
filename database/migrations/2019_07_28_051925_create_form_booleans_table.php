@@ -15,6 +15,7 @@ class CreateFormBooleansTable extends Migration
     {
         Schema::create('form_booleans', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->boolean('is_active')->default(true);
             $table->boolean('gen1_oil')->default(false);
             $table->boolean('gen2_oil')->default(false);
             $table->boolean('gen1_oil_filter')->default(false);

@@ -26,7 +26,7 @@ Route::group([
 ], function ($router) {
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
-    Route::get1('user', 'AuthController@me');
+    Route::get('user', 'AuthController@me');
     Route::post('form_details', 'FormDetailsController@create');
     Route::get('forms_details', 'FormDetailsController@getForms');
     Route::get('single_form', 'FormDetailsController@getSingleForm');

@@ -19,8 +19,6 @@
           placeholder="Password"
         />
         <button @click="logIn()" class="btn btn-md">Log In</button>
-
-        <!-- Remind Passowrd -->
       </div>
     </div>
   </div>
@@ -34,13 +32,13 @@ export default {
       email: ""
     };
   },
-  async beforeCreate() {
+  async created() {
     await this.getUser();
   },
   methods: {
     getUser() {
       if (!window.localStorage.getItem("token")) return "";
-      this.$route.go("/dashboard");
+      window.location.href = "/dashboard";
     },
     async logIn() {
       await axios

@@ -144,7 +144,6 @@ class FormDetailsController extends Controller
         $forms = FormDetails::all();
         $arr = [];
         foreach ($forms as $key => $form) {
-
             $obj = [
                 'formDetails' => $form,
                 'formBooleans' => $form->formBooleans

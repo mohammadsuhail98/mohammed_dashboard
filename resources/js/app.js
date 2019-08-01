@@ -21,7 +21,6 @@ window.Vue = require('vue');
 
 Vue.component('login', require('./components/Login.vue').default);
 Vue.component('dashboard', require('./components/dashboard.vue').default);
-Vue.component('user-dashboard', require('./components/UserDashboard.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,5 +29,5 @@ Vue.component('user-dashboard', require('./components/UserDashboard.vue').defaul
  */
 
 const app = new Vue({
-    el: '#app',
+    el: '#app'
 });
