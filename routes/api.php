@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 Route::group(['prefix' => 'v1'], function () {
     Route::post('login', 'AuthController@login');
     Route::post('registration', 'UserController@createUser');
+    Route::get('forms_excel', 'FormDetailsController@getExcel');
 });
 Route::group([
 

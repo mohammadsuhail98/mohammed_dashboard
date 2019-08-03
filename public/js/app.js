@@ -2091,6 +2091,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var config = {
   headers: {
     Authorization: "Bearer ".concat(window.localStorage.getItem("token"))
@@ -39282,6 +39288,19 @@ var render = function() {
                   _vm._m(4),
                   _vm._v(" "),
                   _vm._m(5),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-outline-danger",
+                      attrs: {
+                        href: "http://127.0.0.1:8000/api/v1/forms_excel",
+                        target: "_blank",
+                        rel: "noopener noreferrer"
+                      }
+                    },
+                    [_vm._v("Download as Excel sheet")]
+                  ),
                   _vm._v(" "),
                   _c(
                     "div",

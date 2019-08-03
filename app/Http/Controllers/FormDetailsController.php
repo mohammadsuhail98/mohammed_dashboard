@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\FormDetails;
 use Illuminate\Http\Request;
 use App\FormBoolean;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\FormExport;
 
 class FormDetailsController extends Controller
 {
@@ -179,5 +181,9 @@ class FormDetailsController extends Controller
                 "formBooleans" => $form[0]->formBooleans
             ]
         ]);
+    }
+    public function getExcel()
+    {
+        return Excel::download(new FormExport, 'data.xlsx');
     }
 }

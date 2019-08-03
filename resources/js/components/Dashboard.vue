@@ -152,6 +152,12 @@
               placeholder="Filter Developers"
             />
           </div>
+          <a
+            href="http://127.0.0.1:8000/api/v1/forms_excel"
+            target="_blank"
+            class="btn btn-outline-danger"
+            rel="noopener noreferrer"
+          >Download as Excel sheet</a>
           <!-- Modal -->
 
           <div
